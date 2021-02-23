@@ -75,10 +75,7 @@ def make_pdf2(images):
     path = os.path.join(path1,path2,path3,path4)
     
     pdfname = path
-    pdf = cairo.PDFSurface( pdfname, 
-                            paper_width*point_to_inches, 
-                            paper_height*point_to_inches
-                            )
+    pdf = cairo.PDFSurface( pdfname, paper_width*point_to_inches, paper_height*point_to_inches)
     
     cr = cairo.Context(pdf)
     

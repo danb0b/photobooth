@@ -10,7 +10,7 @@ import cv2
 #import math
 #from math import pi
 #import matplotlib.pyplot as plt
-video_capture = cv2.VideoCapture(2)
+video_capture = cv2.VideoCapture(0)
 #video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640);
 #video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 360);
 import PyQt5.QtGui as qg
@@ -78,7 +78,7 @@ class ImageWindow(qw.QWidget):
         layout.addWidget(self.imagelabel)
         self.setLayout(layout)
         self.ii = 0
-        self.template = cv2.imread('template2.png',cv2.IMREAD_COLOR)
+        self.template = cv2.imread('template4.png',cv2.IMREAD_COLOR)
         self.loadimage()
         
     def keyPressEvent(self,event):

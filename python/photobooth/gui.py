@@ -145,7 +145,7 @@ class Photostrip(CustomWidget):
     def __init__(self,*args, **kwargs):
         super(Photostrip,self).__init__(*args, **kwargs)
     
-        self.template = cv2.imread('template3.png',cv2.IMREAD_COLOR)
+        self.template = cv2.imread('template4.png',cv2.IMREAD_COLOR)
         self.template_height, self.template_width,self.template_depth = self.template.shape
 
         self.imagelabel = qw.QLabel()

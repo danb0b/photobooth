@@ -56,7 +56,7 @@ def cv_to_qimage(img):
 class ImageWindow(qw.QWidget):
     def __init__(self,*args, **kwargs):
         super(ImageWindow,self).__init__(*args, **kwargs)
-        self.video_capture = cv2.VideoCapture(2)
+        self.video_capture = cv2.VideoCapture(0)
 
         is_sucessfully_read, img = self.video_capture.read()
         is_sucessfully_read, img = self.video_capture.read()
